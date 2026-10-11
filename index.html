@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prepwell — Placement Learning Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="animation.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <aside class="sidebar" id="sidebar">
+    <a href="#" class="brand-lockup" data-nav="dashboard">
+      <svg class="brand-mark" viewBox="0 0 96 120" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <ellipse cx="48" cy="60" rx="45" ry="57"/><path d="M48 88V46" stroke-linecap="round"/>
+        <path d="M48 58c-8-2-14-8-16-16 9 0 15 5 16 16Zm0 0c8-2 14-8 16-16-9 0-15 5-16 16Z"/>
+        <path d="M48 74c-9-2-15-8-17-17 10 0 16 6 17 17Zm0 0c9-2 15-8 17-17-10 0-16 6-17 17Z"/>
+        <path d="M48 46c-6-3-9-9-8-16 6 3 9 9 8 16Zm0 0c6-3 9-9 8-16-6 3-9 9-8 16Z"/>
+        <path d="M30 44c-5 1-9-1-12-5 5-2 9-1 12 5Zm36 0c5 1 9-1 12-5-5-2-9-1-12 5Z"/>
+      </svg>
+      <span class="brand-name">Prepwell</span>
+    </a>
+    <nav class="side-nav" id="sideNav" aria-label="Primary">
+      <button class="nav-item" data-nav="dashboard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Dashboard</span></button>
+      <button class="nav-item" data-nav="roadmap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16M4 12h10M4 18h16" stroke-linecap="round"/></svg><span>Roadmap</span></button>
+      <button class="nav-item" data-nav="programming"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4 3 12l5 8M16 4l5 8-5 8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Programming</span></button>
+      <button class="nav-item" data-nav="dsa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8 7l3 9m5-9-3 9"/></svg><span>DSA</span></button>
+      <button class="nav-item" data-nav="webdev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 4v5" stroke-linecap="round"/></svg><span>Web Development</span></button>
+      <button class="nav-item" data-nav="sql"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6" stroke-linecap="round"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" stroke-linecap="round"/></svg><span>SQL</span></button>
+      <button class="nav-item" data-nav="aptitude"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/></svg><span>Aptitude</span></button>
+      <button class="nav-item" data-nav="corecs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg><span>Core CS</span></button>
+      <button class="nav-item" data-nav="codingpractice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 8 4 12l5 4M15 8l5 4-5 4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Coding Practice</span></button>
+      <button class="nav-item" data-nav="mocktests"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="4" width="12" height="16" rx="2"/><path d="M9 10h6M9 14h6" stroke-linecap="round"/></svg><span>Mock Tests</span></button>
+      <button class="nav-item" data-nav="interview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6" stroke-linecap="round"/></svg><span>Interview Prep</span></button>
+      <button class="nav-item" data-nav="communication"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v11H8l-4 4V5Z" stroke-linejoin="round"/></svg><span>Communication</span></button>
+      <button class="nav-item" data-nav="goals"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 21V4" stroke-linecap="round"/><path d="M5 4h13l-3 4 3 4H5" stroke-linejoin="round"/></svg><span>Goals</span></button>
+      <button class="nav-item" data-nav="analytics"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="11" width="3.5" height="9" rx="1"/><rect x="10.3" y="6" width="3.5" height="14" rx="1"/><rect x="16.5" y="14" width="3.5" height="6" rx="1"/></svg><span>Analytics</span></button>
+      <button class="nav-item" data-nav="profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6" stroke-linecap="round"/></svg><span>Profile</span></button>
+    </nav>
+  </aside>
+
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+  <div class="main-area">
+    <header class="topbar">
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar"><span></span><span></span><span></span></button>
+      <h1 class="topbar-title" id="topbarTitle">Dashboard</h1>
+      <div class="topbar-right">
+        <div class="topbar-chip"><span id="topbarOverallPercent">0%</span> ready</div>
+        <button class="avatar" data-nav="profile" aria-label="Go to profile" id="topbarAvatar">K</button>
+      </div>
+    </header>
+
+    <main class="content-scroll">
+
+      <!-- ============ DASHBOARD ============ -->
+      <section class="page-section active" id="section-dashboard">
+        <section class="hero">
+          <div class="hero-text">
+            <p class="eyebrow">Welcome back</p>
+            <h1 id="greeting">Good evening</h1>
+            <p class="hero-sub">Your placement-readiness score, calculated from everything you've completed so far.</p>
+          </div>
+          <div class="hero-ring">
+            <svg viewBox="0 0 200 200" class="ring-svg" aria-hidden="true"><circle class="ring-track" cx="100" cy="100" r="86"></circle><circle class="ring-progress" id="overallRing" cx="100" cy="100" r="86"></circle></svg>
+            <div class="ring-center"><span class="ring-number" id="overallPercent">0%</span><span class="ring-caption">Placement ready</span></div>
+          </div>
+        </section>
+
+        <div class="continue-card">
+          <div><div class="label">CONTINUE LEARNING</div><div class="stage-text" id="continueLearningText">Loading...</div></div>
+          <button class="btn-primary" id="continueLearningBtn">Continue Learning</button>
+        </div>
+
+        <div class="stat-card-grid" id="dashboardStatCards"></div>
+
+        <section class="split-block">
+          <div class="panel goals-panel">
+            <div class="panel-heading"><h2>Today's tasks</h2><span class="panel-note" id="todayTasksCount"></span></div>
+            <ul class="goal-list" id="todayTasksList"></ul>
+            <div class="add-task-row"><input type="text" id="newTaskInput" placeholder="Add a task..."><button class="btn-secondary" id="addTaskBtn">Add</button></div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading"><h2>Your progress</h2></div>
+            <ul class="mini-progress" id="dashboardProgressBars"></ul>
+          </div>
+        </section>
+
+        <section class="split-block">
+          <div class="panel">
+            <div class="panel-heading"><h2>Recent mock test scores</h2></div>
+            <div class="score-chart" id="dashboardScoreChart"></div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading"><h2>Recent activity</h2></div>
+            <ul class="activity-list" id="recentActivityList"></ul>
+          </div>
+        </section>
+      </section>
+
+      <!-- ============ ROADMAP ============ -->
+      <section class="page-section" id="section-roadmap">
+        <div class="page-header"><h1>Learning Roadmap</h1><p>Start here. Work through each stage in order — your progress is calculated automatically from what you complete elsewhere on the site.</p></div>
+        <div class="roadmap-list" id="roadmapList"></div>
+      </section>
+
+      <!-- ============ PROGRAMMING ============ -->
+      <section class="page-section" id="section-programming">
+        <div class="page-header"><h1>Programming</h1><p>Pick a language, learn each topic, then mark it complete once you've done the practice task.</p></div>
+        <div class="lang-tabs" id="programmingLangTabs"></div>
+        <div id="programmingContent"></div>
+      </section>
+
+      <!-- ============ DSA ============ -->
+      <section class="page-section" id="section-dsa">
+        <div class="page-header"><h1>DSA — Problem Practice Tracker</h1><p>Real problems on LeetCode. Click Solve to open the problem, then come back and mark it solved.</p></div>
+        <div class="panel" style="margin-bottom:1.1rem;">
+          <div class="panel-heading"><h2>Overall DSA progress</h2><span class="panel-note" id="dsaOverallLabel"></span></div>
+          <div class="bar-track"><div class="bar-fill" id="dsaOverallBar"></div></div>
+        </div>
+        <div class="stat-card-grid" id="dsaStatCards"></div>
+        <div class="filter-bar">
+          <input type="text" id="dsaSearch" placeholder="Search problems, e.g. 'binary tree'...">
+          <div class="filter-chip-group" id="dsaDifficultyFilter"></div>
+          <div class="filter-chip-group" id="dsaSolvedFilter"></div>
+        </div>
+        <div id="dsaTopicsList"></div>
+      </section>
+
+      <!-- ============ WEB DEVELOPMENT ============ -->
+      <section class="page-section" id="section-webdev">
+        <div class="page-header"><h1>Web Development</h1><p>HTML, CSS and JavaScript from scratch, plus mini-projects to build once you're ready.</p></div>
+        <div class="lang-tabs" id="webdevTabs"></div>
+        <div id="webdevContent"></div>
+      </section>
+
+      <!-- ============ SQL ============ -->
+      <section class="page-section" id="section-sql">
+        <div class="page-header"><h1>SQL</h1><p>Learn each concept, then practice it on a real challenge site.</p></div>
+        <div class="panel" style="margin-bottom:1.1rem;">
+          <div class="panel-heading"><h2>Overall SQL progress</h2><span class="panel-note" id="sqlOverallLabel"></span></div>
+          <div class="bar-track"><div class="bar-fill" id="sqlOverallBar"></div></div>
+        </div>
+        <div id="sqlContent"></div>
+      </section>
+
+      <!-- ============ APTITUDE ============ -->
+      <section class="page-section" id="section-aptitude">
+        <div class="page-header"><h1>Aptitude Practice</h1><p>Answer real questions and get instant feedback with explanations.</p></div>
+        <div class="quiz-stats-row" id="aptitudeStatsRow"></div>
+        <div class="quiz-category-grid" id="aptitudeCategoryGrid"></div>
+        <div id="aptitudeQuizArea"></div>
+      </section>
+
+      <!-- ============ CORE CS ============ -->
+      <section class="page-section" id="section-corecs">
+        <div class="page-header"><h1>Core CS Subjects</h1><p>The concepts every technical interviewer asks about.</p></div>
+        <div class="lang-tabs" id="corecsTabs"></div>
+        <div id="corecsContent"></div>
+      </section>
+
+      <!-- ============ CODING PRACTICE ============ -->
+      <section class="page-section" id="section-codingpractice">
+        <div class="page-header"><h1>Coding Practice</h1><p>All practice problems in one place — filter by difficulty, topic or platform.</p></div>
+        <div class="filter-bar">
+          <input type="text" id="cpSearch" placeholder="Search problems...">
+          <select id="cpTopicFilter"></select>
+          <select id="cpDifficultyFilter"><option value="all">All difficulties</option><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Hard">Hard</option></select>
+          <select id="cpPlatformFilter"><option value="all">All platforms</option></select>
+        </div>
+        <div class="problem-list" id="cpProblemList"></div>
+      </section>
+
+      <!-- ============ MOCK TESTS ============ -->
+      <section class="page-section" id="section-mocktests">
+        <div class="page-header"><h1>Mock Tests</h1><p>Timed-style concept tests across every subject. Your attempts are saved below.</p></div>
+        <div class="quiz-category-grid" id="mockCategoryGrid"></div>
+        <div id="mockQuizArea"></div>
+        <div class="panel">
+          <div class="panel-heading"><h2>Previous attempts</h2></div>
+          <div style="overflow-x:auto;"><table class="attempts-table" id="mockAttemptsTable"><thead><tr><th>Category</th><th>Date</th><th>Score</th><th>Percentage</th></tr></thead><tbody id="mockAttemptsBody"></tbody></table></div>
+        </div>
+      </section>
+
+      <!-- ============ INTERVIEW PREPARATION ============ -->
+      <section class="page-section" id="section-interview">
+        <div class="page-header"><h1>Interview Preparation</h1><p>Read each question, write your own answer, and mark it prepared.</p></div>
+        <div class="card-grid three-col" id="interviewOverviewCards" style="margin-bottom:1.1rem;"></div>
+        <div class="panel" style="margin-bottom:1.1rem;">
+          <div class="panel-heading"><h2>Technical questions</h2><input type="text" class="btn-ghost" id="techQFilter" placeholder="Filter by subject (e.g. SQL)" style="border-radius:999px;padding:0.4rem 0.8rem;"></div>
+          <div id="interviewTechnicalList"></div>
+        </div>
+        <div class="panel" style="margin-bottom:1.1rem;">
+          <div class="panel-heading"><h2>HR questions</h2></div>
+          <div id="interviewHrList"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-heading"><h2>General interview notes</h2></div>
+          <textarea id="interviewNotes" class="notes-area" rows="5" placeholder="Jot down anything you want to remember..."></textarea>
+        </div>
+      </section>
+
+      <!-- ============ COMMUNICATION ============ -->
+      <section class="page-section" id="section-communication">
+        <div class="page-header"><h1>Communication Skills</h1><p>Track your soft-skill preparation for interviews and group discussions.</p></div>
+        <div class="card-grid three-col" id="communicationList"></div>
+      </section>
+
+      <!-- ============ GOALS ============ -->
+      <section class="page-section" id="section-goals">
+        <div class="page-header row-header">
+          <div><h1>Goals</h1><p>Deadline-based goals — link one to real activity so it updates itself.</p></div>
+          <button class="btn-primary" id="addGoalBtn">+ Add Goal</button>
+        </div>
+        <div class="card-grid" id="goalsList"></div>
+      </section>
+
+      <!-- ============ ANALYTICS ============ -->
+      <section class="page-section" id="section-analytics">
+        <div class="page-header"><h1>Analytics</h1><p>Everything below is calculated live from your actual activity.</p></div>
+        <section class="hero" style="padding-top:0;">
+          <div class="hero-text"><p class="eyebrow">Overall readiness</p><h1 id="analyticsOverallPercent">0%</h1><p class="hero-sub">Average across every tracked area.</p></div>
+          <div class="hero-ring">
+            <svg viewBox="0 0 200 200" class="ring-svg" aria-hidden="true"><circle class="ring-track" cx="100" cy="100" r="86"></circle><circle class="ring-progress" id="analyticsRing" cx="100" cy="100" r="86"></circle></svg>
+            <div class="ring-center"><span class="ring-number" id="analyticsRingPercent">0%</span><span class="ring-caption">Overall progress</span></div>
+          </div>
+        </section>
+        <div class="split-block">
+          <div class="panel"><div class="panel-heading"><h2>Progress by area</h2></div><ul class="mini-progress" id="analyticsSkillBars"></ul></div>
+          <div class="panel"><div class="panel-heading"><h2>Activity summary</h2></div><ul class="mini-progress" id="analyticsActivitySummary"></ul></div>
+        </div>
+      </section>
+
+      <!-- ============ PROFILE ============ -->
+      <section class="page-section" id="section-profile">
+        <div class="page-header row-header">
+          <div><h1>Profile</h1><p>Keep your details up to date.</p></div>
+          <button class="btn-secondary" id="profileEditBtn">Edit profile</button>
+        </div>
+        <div class="panel">
+          <div id="profileView" class="profile-grid"></div>
+          <form id="profileForm" class="profile-grid" hidden>
+            <label>Student name<input type="text" id="profileName" required></label>
+            <label>Email<input type="email" id="profileEmail"></label>
+            <label>College<input type="text" id="profileCollege" required></label>
+            <label>Branch<input type="text" id="profileBranch" required></label>
+            <label>Year<input type="text" id="profileYear" required></label>
+            <label>CGPA<input type="text" id="profileCgpa"></label>
+            <label class="span-2">Skills<input type="text" id="profileSkills"></label>
+            <label>Target role<input type="text" id="profileTargetRole"></label>
+            <label>Target companies<input type="text" id="profileTargetCompanies"></label>
+            <div class="modal-actions span-2"><button type="button" class="btn-secondary" id="profileCancelBtn">Cancel</button><button type="submit" class="btn-primary">Save changes</button></div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<!-- ============ MODAL: Add/Edit Goal ============ -->
+<div class="modal-overlay" id="goalModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="modal-head"><h3 id="goalModalTitle">Add goal</h3><button class="modal-close" data-close-modal="goalModal">&times;</button></div>
+    <form id="goalForm">
+      <input type="hidden" id="goalEditId">
+      <label>Goal name<input type="text" id="goalName" required placeholder="e.g. Solve 100 DSA problems"></label>
+      <label>Category
+        <select id="goalCategory"><option>DSA</option><option>SQL</option><option>Programming</option><option>Aptitude</option><option>Mock Tests</option><option>Communication</option><option>Interview Prep</option><option>Other</option></select>
+      </label>
+      <label>Deadline<input type="date" id="goalDeadline" required></label>
+      <label>Link to automatic progress
+        <select id="goalMetric">
+          <option value="">None — I'll update it manually</option>
+          <option value="dsaSolved">DSA problems solved</option>
+          <option value="sqlTopics">SQL topics completed</option>
+          <option value="mockTests">Mock tests taken</option>
+          <option value="aptitudeAttempted">Aptitude questions attempted</option>
+        </select>
+      </label>
+      <label id="goalTargetWrap" hidden>Target number<input type="number" id="goalTarget" min="1" value="100"></label>
+      <label>Status<select id="goalStatus"><option value="not-started">Not Started</option><option value="in-progress">In Progress</option><option value="completed">Completed</option></select></label>
+      <div class="modal-actions"><button type="button" class="btn-secondary" data-close-modal="goalModal">Cancel</button><button type="submit" class="btn-primary" id="goalSubmitBtn">Add goal</button></div>
+    </form>
+  </div>
+</div>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
